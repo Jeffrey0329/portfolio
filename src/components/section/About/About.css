@@ -1,0 +1,127 @@
+.about {
+  padding: 1rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* .about > * {
+  border: 2px solid var(--text);
+} */
+
+.about h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-content {
+  position: relative;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  font-weight: 700;
+}
+
+.about-content h3 {
+  padding-left: 1.5rem;
+}
+
+.about-story,
+.skills-section {
+  background-color: var(--bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.about-story p {
+  color: var(--text-muted);
+}
+
+.paragraph.lead {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.paragraph {
+  line-height: 1.7;
+  margin: 0 0 1.2rem 0;
+}
+
+.story-lessons {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.story-lessons li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.story-lessons li:before {
+  content: "•";
+  color: var(--text-muted);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.paragraph-quote {
+  background-color: var(--bg-light);
+  line-height: 1.7;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--text-muted);
+  margin: 2rem 0 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background-color: var(--bg-light);
+  padding: 0 1.5rem 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--text-muted);
+}
+
+.skill-category h4 {
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.skills-list span {
+  color: var(--text);
+  background-color: var(--bg-light);
+  border: 1px solid var(--text-muted);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  .paragraph.lead,
+  .skill-category h4 {
+    font-size: 1rem;
+  }
+
+  .paragraph,
+  .story-lessons,
+  .paragraph-quote {
+    font-size: 0.7rem;
+  }
+}

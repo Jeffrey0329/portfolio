@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 3rem;
+}
+
+/* header > * {
+  border: 2px solid var(--text);
+} */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.header-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  flex: 1;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--text);
+  padding: 3px;
+}
+
+.header-middle a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 15px;
+  cursor: pointer;
+}
