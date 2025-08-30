@@ -2,6 +2,8 @@ header {
   display: flex;
   justify-content: center;
   padding: 1rem 3rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* header > * {
@@ -12,7 +14,6 @@ header {
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  padding-right: 10px;
 }
 
 .header-middle {
@@ -51,4 +52,16 @@ header {
   color: var(--text);
   padding: 15px;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  header {
+    font-size: 0.8rem
+  }
+
+  .logo {
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+  }
 }

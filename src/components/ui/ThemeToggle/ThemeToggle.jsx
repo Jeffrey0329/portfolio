@@ -7,10 +7,12 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="theme-toggle"
+      className={`theme-toggle ${theme}`}
       aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
     >
-      {theme === 'dark' ? '☀️' : '🌙'}
+      <span className="toggle-track">
+        <span className="toggle-thumb"></span>
+      </span>
     </button>
   );
 };

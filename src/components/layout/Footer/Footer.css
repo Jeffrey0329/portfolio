@@ -4,6 +4,7 @@ footer {
   margin-top: auto;
   padding: 1rem 3rem 2rem;
   font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* footer > * {
@@ -29,6 +30,6 @@ footer {
 
 @media (max-width: 500px) {
   footer span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
