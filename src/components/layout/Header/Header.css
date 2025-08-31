@@ -54,9 +54,9 @@ header {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   header {
-    font-size: 0.8rem
+    font-size: 0.7rem;
   }
 
   .logo {

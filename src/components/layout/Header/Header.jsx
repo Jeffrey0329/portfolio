@@ -1,5 +1,5 @@
-import { Link } from 'react-scroll';
 import './Header.css';
+import { Link } from 'react-scroll';
 import ThemeToggle from '../../ui/ThemeToggle/ThemeToggle';
 
 const Header = () => {
@@ -12,21 +12,30 @@ const Header = () => {
       <div className="header-middle">
         <nav>
           <Link 
-            to="Project" 
-            spy={true} 
-            smooth={true} 
-            duration={500}
-          >
-            Projects
-          </Link>
-          
-          <Link 
             to="About" 
             spy={true} 
             smooth={true} 
             duration={500}
           >
             About
+          </Link>
+
+          <Link 
+            to="Experience" 
+            spy={true} 
+            smooth={true} 
+            duration={500}
+          >
+            Experience
+          </Link>
+          
+          <Link 
+            to="Project" 
+            spy={true} 
+            smooth={true} 
+            duration={500}
+          >
+            Project
           </Link>
           
           <Link 

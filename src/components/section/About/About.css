@@ -21,113 +21,96 @@
   font-weight: 700;
 }
 
-.about-content h3 {
-  padding-left: 1.5rem;
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+  align-items: center;
+  margin-left: 20px;
 }
 
-.about-story,
-.skills-section {
+.about-avater {
+  width: 350px;
+  height: 350px;
+  border-radius: 30px;
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.about-experience,
+.about-education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
   background-color: var(--bg);
   padding: 1.5rem;
   border-radius: 8px;
-  margin-bottom: 3rem;
+  border-left: 4px solid var(--text);
+}
+
+.about-story {
+  background-color: var(--bg);
+  padding: 1.5rem;
+  border-radius: 8px;
 }
 
 .about-story p {
-  color: var(--text-muted);
-}
-
-.paragraph.lead {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.paragraph {
   line-height: 1.7;
-  margin: 0 0 1.2rem 0;
-}
-
-.story-lessons {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0;
-}
-
-.story-lessons li {
-  margin-bottom: 1rem;
-  padding-left: 1.5rem;
-  position: relative;
-  line-height: 1.6;
-}
-
-.story-lessons li:before {
-  content: "•";
-  color: var(--text-muted);
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  font-size: 1.2rem;
-}
-
-.paragraph-quote {
-  background-color: var(--bg-light);
-  line-height: 1.7;
-  padding: 1rem;
-  border-radius: 8px;
-  border-left: 4px solid var(--text-muted);
-  margin: 2rem 0 0;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-}
-
-.skill-category {
-  background-color: var(--bg-light);
-  padding: 0 1.5rem 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid var(--text-muted);
-}
-
-.skill-category h4 {
   color: var(--text);
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
 }
 
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-.skills-list span {
-  color: var(--text);
-  background-color: var(--bg-light);
-  border: 1px solid var(--text-muted);
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
+@media (max-width: 1200px) {
+  .about-avater {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 800px) {
-  .paragraph.lead,
-  .skill-category h4 {
-    font-size: 1rem;
+  .about-avater {
+    width: 250px;
+    height: 250px;
   }
 
-  .paragraph,
-  .story-lessons,
-  .paragraph-quote {
-    font-size: 0.7rem;
+  .about-grid {
+    margin-left: 0;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  
+  .about-story p {
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 500px) {
   .about h2 {
     font-size: 1.5rem;
+  }
+
+  .about-avater {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
   }
 }
