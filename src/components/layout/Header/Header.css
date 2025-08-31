@@ -56,7 +56,11 @@ header {
 
 @media (max-width: 800px) {
   header {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .header-middle a{
+    padding: 10px;
   }
 
   .logo {
