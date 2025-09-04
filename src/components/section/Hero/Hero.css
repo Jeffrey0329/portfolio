@@ -49,6 +49,12 @@
 }
 
 @media (max-width: 800px) {
+  .hero-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+  }
+
   .hero h1 {
     font-size: 1rem;
   }

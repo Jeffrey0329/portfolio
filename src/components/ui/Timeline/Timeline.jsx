@@ -3,10 +3,19 @@ import './Timeline.css'
 const Timeline = () => {
   const timelineData = [
     {
+      year: "July 2025 - Present",
+      title: "Mobile Trading Platform",
+      subtitle: "TradeX - Side Project",
+      technologies: ["React Native", "Node.js Express", "MySQL"],
+      description: "Developed a full-stack mobile trading application enabling users to buy and sell items seamlessly. Implemented real-time chat functionality between buyers and sellers, secure payment processing, and dynamic item listing management with image upload capabilities.",
+      liveUrl: "#",
+      githubUrl: "https://github.com/Jeffrey0329/trading-app"
+    },
+    {
       year: "Jan 2025 - July 2025",
       title: "AI-Powered Customer Support Platform",
       subtitle: "Techcare Consulting - Capstone Project",
-      technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "TXT"],
+      technologies: ["React.js", "Spring Boot", "MySQL", "RAG"],
       description: "Led development of a hybrid AI-human customer support system featuring Retrieval-Augmented Generation (RAG), speech-to-text (STT), and text-to-speech (TTS) capabilities. Implemented multi-tier escalation workflow and real-time dashboard analytics for SMEs.",
       liveUrl: "https://chat.elvificent.com/",
       githubUrl: "https://github.com/Elvificent/ticket"
@@ -15,7 +24,7 @@ const Timeline = () => {
       year: "Jan 2025 - Apr 2025", 
       title: "Wedding Planning Booking System",
       subtitle: "MyLoveWedding - Semester Project",
-      technologies: ["React.js", "Spring Boot", "MySQL", "RAG"],
+      technologies: ["HTML", "CSS", "JavaScript", "TXT"],
       description: "Designed and implemented a client-side wedding planning platform with venue selection, package customization, and simulated payment processing. Utilized local storage for data persistence and text files for dynamic content loading.",
       liveUrl: "https://mylovewedding.vercel.app/index.html",
       githubUrl: "https://github.com/Elvificent/mylovewedding"

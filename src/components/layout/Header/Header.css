@@ -69,3 +69,12 @@ header {
     font-size: 1rem;
   }
 }
+
+@media (max-width: 500px) {
+  .header-left {
+    display: none;
+  }
+  .header-right {
+    margin-left: 10px;
+  }
+}

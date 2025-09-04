@@ -10,8 +10,8 @@ const Experience = () => {
             <div className="skill-category">
               <h4>Frontend Development</h4>
               <div className="skills-list">
-                <span>HTML5</span>
-                <span>CSS3</span>
+                <span>HTML</span>
+                <span>CSS</span>
                 <span>JavaScript</span>
                 <span>React.js</span>
                 <span>React Native</span>
@@ -35,7 +35,7 @@ const Experience = () => {
               <h4>Tools & Others</h4>
               <div className="skills-list">
                 <span>Git & GitHub</span>
-                <span>Figma (UI/UX)</span>
+                <span>Figma</span>
                 <span>Postman</span>
                 <span>n8n</span>
                 <span>Cloudflare</span>
